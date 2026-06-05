@@ -5,17 +5,15 @@ import '../../domain/entities/refraction_result.dart';
 import '../../domain/services/refraction_calculator.dart';
 
 class RefractionProvider extends ChangeNotifier {
-  RefractionProvider({required RefractionCalculator calculator})
-    : _calculator = calculator;
+  RefractionProvider({required this.calculator});
 
-  final RefractionCalculator _calculator;
+  final RefractionCalculator calculator;
 
   RefractionResult? _result;
   String? _errorMessage;
 
   RefractionResult? get result => _result;
   String? get errorMessage => _errorMessage;
-  RefractionCalculator get calculator => _calculator;
 
   void calculate({
     required String rightSphere,
@@ -43,7 +41,7 @@ class RefractionProvider extends ChangeNotifier {
         ),
       );
 
-      _result = _calculator.calculate(prescription);
+      _result = calculator.calculate(prescription);
       _errorMessage = null;
     } on FormatException catch (error) {
       _result = null;

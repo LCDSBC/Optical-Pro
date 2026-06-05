@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../core/theme/app_theme.dart';
-import '../../domain/entities/eye_prescription.dart';
 import '../providers/refraction_provider.dart';
 import '../widgets/clinical_metric_card.dart';
 import '../widgets/premium_panel.dart';
