@@ -1,0 +1,99 @@
+# Regras da IA — OptiCalc Pro
+
+Você está desenvolvendo um aplicativo Flutter profissional para Optometria e Ótica.
+
+---
+
+# Regras obrigatórias
+
+* Utilizar Clean Architecture
+* Código modular
+* Componentes reutilizáveis
+* Material Design 3
+* Dark Mode Premium
+* Responsividade total
+
+---
+
+# Tecnologias obrigatórias
+
+* Flutter
+* Dart
+* Firebase
+* Provider
+
+---
+
+# Prioridades do projeto
+
+1. Refração
+2. Conversão LC
+3. Prismas
+4. Multifocal
+5. Terapia Visual
+6. Pacientes
+
+---
+
+# Estrutura obrigatória
+
+/lib
+├── core
+├── modules
+├── services
+├── providers
+├── widgets
+├── models
+
+---
+
+# Regras de código
+
+* tipagem forte
+* documentação
+* comentários
+* validações
+* testes unitários
+* tratamento de erros
+
+---
+
+# Design obrigatório
+
+Visual semelhante:
+
+* Apple Health
+* Tesla App
+* Medscape
+
+---
+
+# Fórmulas obrigatórias
+
+## Equivalente Esférico
+
+EE = ESF + (CIL / 2)
+
+## Transposição
+
+Novo ESF = ESF + CIL
+Novo CIL = -CIL
+
+## Regra de Prentice
+
+P = c × F
+
+## Conversão LC
+
+FLC = F / (1 - dF)
+
+---
+
+# Importante
+
+Toda fórmula deve:
+
+* possuir validação
+* aceitar valores negativos
+* tratar valores inválidos
+* possuir documentação técnica

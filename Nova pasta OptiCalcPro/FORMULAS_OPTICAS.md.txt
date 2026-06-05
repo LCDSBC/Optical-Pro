@@ -1,0 +1,83 @@
+# Fórmulas Ópticas — OptiCalc Pro
+
+# Refração
+
+## Equivalente Esférico
+
+EE = ESF + (CIL / 2)
+
+## Transposição
+
+Novo ESF = ESF + CIL
+Novo CIL = -CIL
+Novo EIXO = eixo ± 90°
+
+---
+
+# Prismas
+
+## Regra de Prentice
+
+P = c × F
+
+Onde:
+
+* P = prisma
+* c = descentração em centímetros
+* F = potência da lente
+
+---
+
+# Lente de Contato
+
+## Conversão por Vértice
+
+FLC = F / (1 - dF)
+
+Onde:
+
+* F = potência da lente
+* d = distância vértice em metros
+
+---
+
+# Distância de Trabalho
+
+D = 1 / distância
+
+---
+
+# Multifocal
+
+## Adição
+
+ADD calculada baseada em:
+
+* idade
+* acomodação residual
+* distância de trabalho
+
+---
+
+# Terapia Visual
+
+## AC/A
+
+AC/A = convergência acomodativa / acomodação
+
+## NRA/PRA
+
+Baseado em estimulação acomodativa positiva e negativa
+
+## Flexibilidade Acomodativa
+
+CPM = ciclos por minuto
+
+---
+
+# Regras Gerais
+
+* validar entradas
+* aceitar sinais positivos e negativos
+* validar eixos entre 0° e 180°
+* arredondamento em 0.25D
