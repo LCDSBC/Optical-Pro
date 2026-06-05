@@ -8,7 +8,7 @@ Sistema profissional para Optometria e Otica desenvolvido em Flutter.
 - Dart 3.12.1
 - Android Gradle Plugin 9.0.1
 - Gradle 9.1.0
-- Android minSdk 23
+- Android minSdk 24
 
 ## Dependencias principais
 

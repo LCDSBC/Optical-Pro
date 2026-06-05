@@ -29,7 +29,7 @@ class AppReadinessProvider extends ChangeNotifier {
     const ReadinessItem(
       title: 'Android',
       description:
-          'Namespace, applicationId, minSdk 23 e targetSdk do Flutter '
+          'Namespace, applicationId, minSdk 24 e targetSdk do Flutter '
           'configurados para execucao.',
       status: ReadinessStatus.ready,
       icon: Icons.android_outlined,
