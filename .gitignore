@@ -1,0 +1,21 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+coverage/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Firebase generated/local files
+.firebaserc
+firebase-debug.log
+firebase_options.local.dart
+
+# OS
+.DS_Store
+Thumbs.db
