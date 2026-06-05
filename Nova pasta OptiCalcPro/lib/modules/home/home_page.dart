@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
                       crossAxisCount: crossAxisCount,
                       mainAxisSpacing: 16,
                       crossAxisSpacing: 16,
-                      mainAxisExtent: 210,
+                      mainAxisExtent: 250,
                     ),
                   ),
                 ),
