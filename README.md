@@ -42,3 +42,26 @@ flutter analyze
 flutter test
 flutter build web
 ```
+
+## Publicacao na Play Store
+
+### Preparar assinatura (primeira vez)
+
+```sh
+./scripts/generate_keystore.sh
+```
+
+### Gerar APK e AAB assinados
+
+```sh
+./scripts/build_release.sh
+```
+
+Artefatos em `release/`:
+- `opticalc-pro-1.0.0.aab` — enviar ao Google Play Console
+- `opticalc-pro-1.0.0.apk` — distribuicao direta
+
+Documentacao completa em `play-store/`:
+- `listing-pt-BR.md` — textos da loja
+- `PRIVACY_POLICY.md` — politica de privacidade
+- `RELEASE_CHECKLIST.md` — checklist de publicacao
