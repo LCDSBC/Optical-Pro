@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:opticalc_pro/app.dart';
+import 'package:opticalc_pro/core/routes/app_routes.dart';
 import 'package:opticalc_pro/services/firebase_bootstrap_service.dart';
 import 'package:opticalc_pro/services/patient_repository.dart';
 
@@ -28,11 +29,9 @@ void main() {
       OptiCalcProApp(
         firebaseStatus: const FirebaseStatus.offline('Modo teste'),
         patientRepository: PatientRepository.memory(),
+        initialRoute: AppRoutes.patients,
       ),
     );
-    await tester.pumpAndSettle();
-
-    await tester.tap(find.text('Pacientes').first);
     await tester.pumpAndSettle();
 
     await tester.enterText(find.byType(TextFormField).at(0), 'Ana Souza');

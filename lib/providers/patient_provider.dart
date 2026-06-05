@@ -4,24 +4,23 @@ import '../models/patient.dart';
 import '../services/patient_repository.dart';
 
 class PatientProvider extends ChangeNotifier {
-  PatientProvider({required PatientRepository repository})
-    : _repository = repository;
+  PatientProvider({required this.repository});
 
-  final PatientRepository _repository;
+  final PatientRepository repository;
 
   bool _isLoading = false;
   String? _errorMessage;
   List<Patient> _patients = <Patient>[];
 
   bool get isLoading => _isLoading;
-  bool get usesFirebase => _repository.usesFirebase;
+  bool get usesFirebase => repository.usesFirebase;
   String? get errorMessage => _errorMessage;
   List<Patient> get patients => List.unmodifiable(_patients);
 
   Future<void> loadPatients() async {
     _setLoading(true);
     try {
-      _patients = await _repository.fetchPatients();
+      _patients = await repository.fetchPatients();
       _errorMessage = null;
     } on Object catch (error) {
       _errorMessage = 'Nao foi possivel carregar pacientes: $error';
@@ -33,8 +32,8 @@ class PatientProvider extends ChangeNotifier {
   Future<void> savePatient(Patient patient) async {
     _setLoading(true);
     try {
-      await _repository.savePatient(patient);
-      _patients = await _repository.fetchPatients();
+      await repository.savePatient(patient);
+      _patients = await repository.fetchPatients();
       _errorMessage = null;
     } on Object catch (error) {
       _errorMessage = 'Nao foi possivel salvar paciente: $error';

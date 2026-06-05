@@ -13,11 +13,13 @@ class OptiCalcProApp extends StatelessWidget {
   const OptiCalcProApp({
     required this.firebaseStatus,
     required this.patientRepository,
+    this.initialRoute = AppRoutes.home,
     super.key,
   });
 
   final FirebaseStatus firebaseStatus;
   final PatientRepository patientRepository;
+  final String initialRoute;
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +41,7 @@ class OptiCalcProApp extends StatelessWidget {
             themeMode: themeProvider.themeMode,
             theme: AppTheme.light(),
             darkTheme: AppTheme.dark(),
-            initialRoute: AppRoutes.home,
+            initialRoute: initialRoute,
             routes: AppRoutes.routes,
           );
         },
